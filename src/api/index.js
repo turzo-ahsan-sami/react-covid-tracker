@@ -2,7 +2,7 @@ import { NovelCovid } from 'novelcovid';
 import axios from 'axios';
 
 const api = new NovelCovid();
-const url = ' https://covid19.mathdro.id/api';
+const url = 'https://covid19.mathdro.id/api';
 
 // Global Data
 

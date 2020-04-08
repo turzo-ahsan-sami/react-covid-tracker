@@ -4,8 +4,16 @@ import './App.module.css';
 import { Navbar, Cards, Charts, CountryPicker } from './components';
 import { fetchDate, fetchLocalCountry } from './api';
 import Footer from './components/Footer';
+
+
 class App extends Component {
-  state = { data: {}, localData: {}, country: '', flag: '' };
+
+  state = { 
+    data: {}, 
+    localData: {}, 
+    country: '', 
+    flag: '' 
+  };
 
   async componentDidMount() {
     try {
@@ -16,11 +24,12 @@ class App extends Component {
       console.log(err);
     }
   }
+
   handleCountryChange = async country => {
     const localData = await fetchLocalCountry(country);
-    // console.log(localData);
     this.setState({ localData });
   };
+  
   render() {
     const { data, localData } = this.state;
     return (

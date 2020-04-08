@@ -10,6 +10,7 @@ const Spinner = () => {
       viewBox='0 0 100 100'
       xmlSpace='preserve'
     >
+
       <circle
         cx='50'
         cy='50'
@@ -19,6 +20,7 @@ const Spinner = () => {
         strokeMiterlimit='10'
         strokeWidth='4'
       ></circle>
+
       <path
         fill='none'
         stroke='rgb(29, 209, 161)'

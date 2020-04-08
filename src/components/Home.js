@@ -22,7 +22,7 @@ const Home = () => {
       >
         {() => (
           <div className='container'>
-            <h1 className='text-center' style={{fontSize:'80px',color: '#fff'}}>COVID</h1>
+            <h1 className='text-center' style={{fontSize:'80px',color: '#fff'}}>COVID-19</h1>
           </div>
         )}
       </WaterWave>
